@@ -429,6 +429,10 @@ def run(config_file):
     # show final stats
     print('\nBest genome:\n{!s}'.format(winner))
 
+    # Visualize the performance over generations
+    visualize.plot_stats(stats, filename=r'C:\Users\Ahthesham Ali\Downloads\avg_fitness.svg')
+    visualize.plot_species(stats, view=True, filename=r'C:\Users\Ahthesham Ali\Downloads\speciation.svg')
+
 
 if __name__ == '__main__':
     # Determine path to configuration file. This path manipulation is
